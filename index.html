@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #item {
+            position: relative;
+            width: 640px;
+            height: auto;
+            padding: 15px 20px;
+            margin: 10px;
+            border: 1px solid red;
+            float: left;
+        }
+        button {
+            background: rgba(255,255,255,0.7);
+            padding: 5px;
+            border: 1px solid #ccc;
+        }
+        .over {
+            position: absolute;
+            left: 30px;
+            bottom: 30px;
+        }
+        .detail {
+            
+            text-align: justify;
+            line-height: 1.8em;
+            display: none;
+        }
+        
+    </style>
+    <title>상세내용보기</title>
+</head>
+<body>
+   <div id="item">
+    <img src="img/avatar-1.jpg" alt="">
+    <button id="open" class="over" onclick="showDetail();">상세 설명보기</button>
+    <div id="sangse" class="detail">
+        <h4>Avatar</h4>
+        <p>오간뎌이에 어사 편어다에서 테화어서 트그조잴기 데드폰드외엇쌔마다 긴어힌은, 므제깅고 봘믕잉낑을, 른단지로. 얼민이나 우러딘 학핂고 핌렞려릭과 에한형시간다. 뭉다 급깃아나루인골 낭국시세 애간아언 마이사가를 남빙풔대솬으로 잘배러다. 맙다므드여녚등똬 인적새려 읏기 지세릘입은 돌어군가 가쳘의 하굼. 마텡더드와 도삭고 앤폴와 더하의 인오이돼가 샌버먼카와 듬마가 울돔과젼이 교매어 다이쿤에서. 르가린삼넉 룰르남이산먄, 보문의 아드증은 럭는아기어 들딕의 네오질누도록 시머는 카저한겅을 느잉억뒤던 김정깔헥. 머허핌므보으오 치삭의 아페마을이 려위모고 뜽이먼다, 쿠일 흐이발좌의 셈개고 벌하겅지야.
+
+            신아다 다잆저느가 히비헤다 이승데에서 구헌으며, 궆지깽링이 우선다 저망더우면 픈항드조다 도벤 아녀가. 뽀하믐그같이 가여를, 지릿낵너의 렁싱 진시는. 흖너사의 러가흐츠셸까나를 나소미상곡가를 거봉 탄가는 돌마으 어세난다. 말히딩 안비홀이 모왈이 미어던고는 샘잽다 론이머를, 개누 딜햬을의. 의다 시도려둬츨에 그아가자다 히료져들 건현임다가, 비덤틴니의 하날갸줐고 창잉앴인다 데느감어게 제다왐며건곤다. 지엉이 마면탈때는 낱랄홉다 가꺽으로 우믣 체란스로 둔직이요. 은싵까투군는 릐시로 네나가 점이게 봅서종안으로 매하가 지여잔가아, 안민로밤에 다닝참이에, 청엔은 르으와.</p>
+        <button id="close" onclick="hideDetail();">상세설명 닫기</button>
+        </div>
+    </div>
+    <div id="item">
+    <img src="img/avatar-2.jpg" alt="">
+    <button id="open2" class="over" onclick="showDetail2();">상세 설명보기</button>
+    <div id="sangse2" class="detail">
+        <h4>Avatar</h4>
+        <p>오간뎌이에 어사 편어다에서 테화어서 트그조잴기 데드폰드외엇쌔마다 긴어힌은, 므제깅고 봘믕잉낑을, 른단지로. 얼민이나 우러딘 학핂고 핌렞려릭과 에한형시간다. 뭉다 급깃아나루인골 낭국시세 애간아언 마이사가를 남빙풔대솬으로 잘배러다. 맙다므드여녚등똬 인적새려 읏기 지세릘입은 돌어군가 가쳘의 하굼. 마텡더드와 도삭고 앤폴와 더하의 인오이돼가 샌버먼카와 듬마가 울돔과젼이 교매어 다이쿤에서. 르가린삼넉 룰르남이산먄, 보문의 아드증은 럭는아기어 들딕의 네오질누도록 시머는 카저한겅을 느잉억뒤던 김정깔헥. 머허핌므보으오 치삭의 아페마을이 려위모고 뜽이먼다, 쿠일 흐이발좌의 셈개고 벌하겅지야.
+
+            신아다 다잆저느가 히비헤다 이승데에서 구헌으며, 궆지깽링이 우선다 저망더우면 픈항드조다 도벤 아녀가. 뽀하믐그같이 가여를, 지릿낵너의 렁싱 진시는. 흖너사의 러가흐츠셸까나를 나소미상곡가를 거봉 탄가는 돌마으 어세난다. 말히딩 안비홀이 모왈이 미어던고는 샘잽다 론이머를, 개누 딜햬을의. 의다 시도려둬츨에 그아가자다 히료져들 건현임다가, 비덤틴니의 하날갸줐고 창잉앴인다 데느감어게 제다왐며건곤다. 지엉이 마면탈때는 낱랄홉다 가꺽으로 우믣 체란스로 둔직이요. 은싵까투군는 릐시로 네나가 점이게 봅서종안으로 매하가 지여잔가아, 안민로밤에 다닝참이에, 청엔은 르으와.</p>
+        <button id="close2" onclick="hideDetail2();">상세설명닫기</button>    
+    </div>
+   </div> 
+
+   <!-- 자바스크립트 삽입 -->
+   <script>
+    function showDetail(){
+        document.querySelector('#sangse').style.display='block';
+        document.querySelector('#open').style.display='none';
+    }
+    function hideDetail(){
+        document.querySelector('#sangse').style.display='none';
+        document.querySelector('#open').style.display='block';
+    }
+    function showDetail2(){
+        document.querySelector('#sangse2').style.display='block';
+        document.querySelector('#open2').style.display='none';
+    }
+    function hideDetail2(){
+        document.querySelector('#sangse2').style.display='none';
+        document.querySelector('#open2').style.display='block';
+    }
+    
+   </script>
+
+</body>
+</html>
